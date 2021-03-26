@@ -3,7 +3,7 @@ set -euo pipefail
 set -o errexit
 IFS=$'\n\t'
 
-export S3_REGION=''
+export S3_REGION=$S3_REGION
 export S3_ACL=${S3_ACL:-private}
 
 mkdir -p ${MNT_POINT}
